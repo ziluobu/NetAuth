@@ -14,6 +14,14 @@
 ![原理图](https://github.com/ziluobu/NetAuth/blob/master/1.png)
     
 如上原理图，1、所有需要访问资源的终端执行准入到服务器注册。2、服务器定时向防火墙更新授权策略。3、终端可以访问授权网络。
+
+## 程序说明
+client.py   终端运行准入注册程序 <br>
+server.py   服务器运行程序，接收终端注册消息<br>
+fwuser.py   服务器运行，用来向防火墙发送配置命令<br><br>
+
+getusers.py 测试程序：用来获取服务器注册信息<br>
+gnadIP.py   测试程序：手工发送注册消息<br>
 ## 其他
 
 终端运行程序可利用pyinstaller进行编译后脱离python运行。<br>
